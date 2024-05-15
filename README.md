@@ -1,4 +1,4 @@
-# Crystal Browser
+# Flux Browser
 A transparent web browser!
 
 * Works well on kde with blur kwin script
