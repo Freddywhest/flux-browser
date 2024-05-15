@@ -1,0 +1,138 @@
+#tabs
+{
+    user-select: none;
+    width: 100%;
+    left: 0;
+    display: block;
+    overflow-y: hidden;
+    overflow-x: auto;
+    white-space: nowrap;
+    height: $tab-h;
+    padding: 0;
+    margin: 0;
+    background: rgba($blue, 0);
+    #tabsp
+{
+    max-width: calc( 100% - #{$tab-h} );
+    left: 0;
+    display: inline-block;
+    
+    height: $tab-h;
+    padding: 0;
+    margin: 0;
+}
+#add-tab
+{
+    width: $tab-h;
+    left: 0;
+    display: inline-block;
+    color:white;
+    height: $tab-h;
+    padding: 0;
+    vertical-align: top;
+    margin: 0;
+    
+            height: $tab-h;
+            padding-top:calc( #{$tab-h} / 2 - 7px );
+            width: $tab-h;
+            text-align: center;
+            font-size: 14px;
+            line-height: 0;
+            font-family: monospace;
+            background: transparent;
+}
+    &::-webkit-scrollbar
+    {
+        background: red;
+        outline: none;
+        border: none;
+        height: 3px;
+    }
+    &::-webkit-scrollbar-thumb
+    {
+        background: white;
+    }
+    .tab 
+    {
+        margin: 0;
+        width: $tab-w;
+        background: transparent;
+        display: inline-block;
+        height: $tab-h;
+        margin-left: 0px;
+        color: transparent;
+        text-align: left;
+        white-space: nowrap;
+        position: relative;
+        overflow: hidden;
+        text-overflow: nowrap; 
+        cursor: pointer;
+        box-sizing: border-box;
+        border-right: $inactive 0px solid;
+        line-height: 32px;
+        &.active{
+            border-bottom: $active 2px solid;
+        }
+        .favicon{
+            width: $tab-h;
+        display: inline-block;
+        height: $tab-h;
+        vertical-align: top;
+        transform: scale(#{16px / $tab-h});
+        }
+        span{
+            background: linear-gradient(90deg , white 0%,white #{$tab-w - $tab-h*1.5},rgba(255,255,255,0) #{$tab-w - $tab-h},rgba(255,255,255,0) #{$tab-w});
+            -webkit-background-clip: text;
+            overflow: hidden;
+        text-overflow: nowrap; 
+        width: $tab-w;
+        padding:4px;
+        }
+        .close 
+        {
+            color:white;
+            // ::before{content:"";
+            //     background: linear-gradient(to right ,transparent,rgba(49, 49, 58,1));
+            //     position: absolute;
+            // right: 0;
+            // top: 0;
+            // height: $tab-h;
+            // padding-top:calc( #{$tab-h} / 2 - 7px );
+            // width: $tab-h;
+            // }
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: $tab-h;
+            padding-top:calc( #{$tab-h} / 2 - 7px );
+            width: $tab-h;
+            text-align: center;
+            font-size: 14px;
+            line-height: 0;
+            font-family: monospace;
+            background: transparent;
+            // linear-gradient(to right ,transparent,rgba(49, 49, 58,1));
+            // backdrop-filter: opacity(0.8);
+            &:hover{
+                color: darkred;
+            }
+        }
+        &:first-of-type {
+            margin-left: 0;
+        }
+    }
+}
+
+#views {
+  position: relative;
+}
+
+.page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: calc( 100vh - #{$bar-h} - #{$tab-h} );
+}

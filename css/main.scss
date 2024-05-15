@@ -1,0 +1,10 @@
+@import '_reset.scss';
+@import '_vars.scss';
+@import '_nav.scss';
+@import '_tabs.scss';
+.page:not(.active){
+display: none;
+}
+body{
+    background:rgba(49, 49, 58,0.8);
+}
