@@ -1,26 +1,50 @@
 # Flux Browser
-A transparent web browser!
 
-* Works well on kde with blur kwin script
-* Works on other OS, but no blurred window background, only transparency.
-* Runs a script to transparencize webpages.
-## What It Looks Like
-![img](doc/example.png)
+## Introduction
 
-On KDE with Layan theme.
-## To Use
+Welcome to Flux Browser, an innovative web browser built with ElectronJS! Flux Browser offers a modern browsing experience with customizable features, seamless integration, and robust security.
 
-To clone and run this repository you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
+Read our final project blog article [here](https://medium.com/@alfred.nti466/crafting-the-future-building-a-custom-web-browser-with-electronjs-990e4efdd9ac). Connect with the author on LinkedIn: [Alfred](https://www.linkedin.com/in/alfred-nti/).
 
-```bash
-# Clone this repository
-git clone https://github.com/ckissane/crystal-browser
-# Go into the repository
-cd crystal-browser
-# Install dependencies
-npm install
-# Run the app
-gulp scss && npm run start
+## Installation
+
+To install Flux Browser, follow these steps:
+
+1. Clone this repository: `git clone https://github.com/Freddywhest/flux-browser.git`
+2. Navigate to the project directory: `cd flux-browser`
+3. Install dependencies: `npm install`
+
+## Usage
+
+After installation, you can run Flux Browser using the following command:
+
+```
+npm start
 ```
 
-Note: If you're using Linux Bash for Windows, [see this guide](https://www.howtogeek.com/261575/how-to-run-graphical-linux-desktop-applications-from-windows-10s-bash-shell/) or use `node` from the command prompt.
+## Contributing
+
+Contributions are welcome! Please follow these guidelines:
+
+1. Fork the repository
+2. Create a new branch: `git checkout -b feature-name`
+3. Make your changes and commit them: `git commit -m 'Add some feature'`
+4. Push to the branch: `git push origin feature-name`
+5. Submit a pull request
+
+## Related Projects
+
+## Related Projects
+
+Check out these related projects:
+
+- [Electron Mail](https://github.com/electron/electron-mail) - A simple email client built with ElectronJS.
+- [Atom](https://github.com/atom/atom) - A hackable text editor for the 21st century, built on Electron.
+
+
+## Licensing
+
+This project is licensed under the [MIT License](LICENSE).
+
+## What It Looks Like
+![img](doc/example.png)
